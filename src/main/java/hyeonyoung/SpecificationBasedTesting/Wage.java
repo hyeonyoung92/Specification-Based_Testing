@@ -1,10 +1,10 @@
 package hyeonyoung.SpecificationBasedTesting;
 
 public class Wage {
-	static public int calculatePay(Proficiency p, int hours) {
+	static public int calculatePay(Proficiency p, int hours) throws InvalidInputException {
 		int h_salary = 0;
 		int wage = 0;
-		
+		if(hours<0 || hours>40 || ((p != Proficiency.B) && (p != Proficiency.E))) throw new InvalidInputException();
 		if(0<hours && hours<=3) {
 			if(p==Proficiency.E) h_salary = 80000;
 			else h_salary = 40000;
