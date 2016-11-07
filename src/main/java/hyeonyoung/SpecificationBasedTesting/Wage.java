@@ -12,7 +12,7 @@ public class Wage {
 		else if(3<hours && hours<=5) {
 			if(p==Proficiency.E) h_salary = 100000;
 			else h_salary = 50000;
-		}
+		} 
 		else if(5<hours && hours<=40) {
 			if(p==Proficiency.E) h_salary = 120000;
 			else h_salary = 60000;

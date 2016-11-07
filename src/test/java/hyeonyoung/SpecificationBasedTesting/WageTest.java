@@ -29,7 +29,7 @@ public class WageTest {
 		this.expectedWage = expectedWage;
 		this.type = type;
 		this.workingHours = workingHours;
-	}
+	} 
 	
 	@Test
 	public void test_calculatePay_with_each_choice() {
